@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Redirect Page</title>
-  <script>
-    window.onload = function() {
-      window.location.href = "/static/"; // Replace with your desired URL
-    };
-  </script>
-</head>
-<body>
-  <h1>Redirecting...</h1>
-  <p>If you are not redirected, <a href="/static/">click here</a>.</p>
-</body>
+  <head>
+    <script src="search-iframe.js"></script>
+  </head>
+   <body>
+      <div id="content">
+         <h1>Search the Web with Google</h1>
+
+         <form id="uv-form"">
+            <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
+            <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
+          </form>
+
+      </div>
+   </body>
 </html>
