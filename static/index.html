@@ -15,28 +15,22 @@
          <img src="logo.gif" alt="Logo">
       </div>
       <div id="content">
-         <h1>Search the Web and use the BEST static proxy!</h1>
+         <h1>Search the Web with Google</h1>
 
          <form id="uv-form"">
             <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"/> 
             <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input"/>
           </form>
-          <div class="desc left-margin">
-            <p id="uv-error"></p>
-            <pre id="uv-error-code"></pre>
-          </div>
-         <a href="https://discord.gg/zJhPJYJCeJ" target="_blank" class="fa-brands fa-discord"></a>
-         <a href="https://github.com/TheTIW/UV-Static" target="_blank"class="fa-brands fa-github"></a>
-         <a href="https://starttiw.org" target="_blank"class="fa-solid fa-cloud"></a>
-      </div>
-      <script src="uv/uv.bundle.js" defer></script>
-      <script src="uv/uv.config.js" defer></script>
-      <script src="register-sw.js" defer></script>
+      </div><div>
+<input type='text' id='input'></input><button onclick='changeServer()'>Change Server - text input</button>
+         <div>
+           <button onclick='changeServer(random)'>Change Server - Random</button>
+         </div></div>
       <script src="search.js" defer></script>
       <script src="index.js" defer></script>
-      <script src="error.js" defer></script>
+
       <div id="footer">
-         <p>&copy; 2023 TIW. All rights reserved.</p>
+         
       </div>
    </body>
 </html>
