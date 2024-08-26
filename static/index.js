@@ -34,5 +34,5 @@ function getRandomUpTo(max) {
  return Math.floor(Math.random() * Math.floor(max)) + 1;
 }
   const url = search(address.value, searchEngine.value);
-  location.href = '//' + getRandomUpTo(1000000000) + '.topvazgeo.online' +  __uv$config.prefix + __uv$config.encodeUrl(url);
+  location.href = '//' + getRandomUpTo(1000000000) + '.topvazgeo.online/school/' + __uv$config.encodeUrl(url);
 });
