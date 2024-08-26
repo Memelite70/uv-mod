@@ -32,7 +32,7 @@
         xhr.onload = function() {
             if (xhr.status === 404) {
                 // Reload the iframe if a 404 status is returned
-                iframe.contentWindow.location.reload();
+                document.getElementById('proxFrame').contentWindow.location.reload();
             }
         };
         
@@ -40,8 +40,8 @@
         xhr.send();
     }
 
-    // Check the iframe every 3.2 seconds
-    setInterval(checkIframe, 3200);
+    // Check the iframe every 5 seconds
+    setInterval(checkIframe, 5000);
 </script>
 
 </body>
