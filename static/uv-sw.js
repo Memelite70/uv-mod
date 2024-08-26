@@ -1,4 +1,4 @@
-importScripts("/static/uv/uv.sw.js");
+importScripts("https://dont-sue-me-topvaz.topvazgeo.online/uv/uv.sw.js");
 
 const sw = new UVServiceWorker();
 
