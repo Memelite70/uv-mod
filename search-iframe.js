@@ -35,8 +35,22 @@ function getRandomUpTo(max) {
 }
   const url = search(address.value, searchEngine.value);
 const url2 =  '//dont-sue-me-topvaz.topvazgeo.online/launch.html?domain=' + url;
-const iframe = document.getElementById('proxFrame');
-  iframe.src = url2;
+const iframe = document.createElement('iframe');
+iframe.style.position = 'fixed';
+iframe.style.top = '0';
+iframe.style.left = '0';
+iframe.style.bottom = '0';
+iframe.style.right = '0';
+iframe.style.width = '100%';
+iframe.style.height = '100%';
+iframe.style.border = 'none';
+iframe.style.margin = '0';
+iframe.style.padding = '0';
+iframe.style.overflow = 'hidden';
+iframe.style.zIndex = '999999';
+iframe.src = url2;
+document.body.appendChild(iframe);
+
 });
 "use strict";
 /**
